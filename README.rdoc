@@ -1,0 +1,30 @@
+= PasswordStrength
+
+This project rocks and uses MIT-LICENSE.
+
+1).make sure your password field lies in a div . AND THE DIV SHOULD CONTAIN ONLY THIS FIELD
+2).give your password field an id
+3).include password_strength.js by adding this line in application.js
+//= require password_strength
+  make sure to add this line after //= require jquery and before //= require tree AND should be in seprate line
+4).include password_strength.css by adding this line
+*= require password_strength 
+make sure to add this line before //= require tree  AND should be in seprate line
+5).Call password_strength jquery function on your password field like this example:
+
+
+<div>      <!--THIS DIV SHOULD ONLY CONTAIN THE PASSWORD FIELD-->
+	<input type="password" id="PASSWORD" />
+</div>
+<div>
+	<input type="password" id="user" name="user"/>
+<div>
+
+SCRIPT->
+$("#PASSWORD").password_strength();
+$('#user').password_strength();
+
+
+AND ENJOY.
+
+This method can be called on any number of fields. JUST MAKE sure they are in seprate DIVS. 

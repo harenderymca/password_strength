@@ -1,0 +1,16 @@
+<h1>Welcome#new</h1>
+<p>Find me in app/views/welcome/new.html.erb</p>
+
+<div>
+	<%= password_field_tag :password , "" , :size => "20x200" ,:id => "password"%>
+</div>
+
+<div>
+	<%= password_field_tag :passwordtwo , "" ,:size => "20x200", :id => "passwordtwo" %>
+</div>
+
+
+<script type="text/javascript">
+	jQuery('#password').password_strength();
+	jQuery('#passwordtwo').password_strength();
+</script>
